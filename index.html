@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='sv'>
+
+<head>
+    <meta charset='utf-8' />
+
+    <link href='main.min.css' rel='stylesheet' />
+    <link href='stylesheet.css' rel='stylesheet' />
+
+    <script src='main.min.js'></script>
+    <script src='locales/sv.js'></script>
+    <script src='logic.js'></script>
+</head>
+
+
+
+<body>
+    <div id="cover" style="display: none;"></div>
+    <form action="" class='formClass' id='eventAdder'>
+        <table cellspacing="1" cellpadding="10" class="center">
+            <tr>
+                <td>
+                    <label>Person</label>
+                    <select id="formPerson" class="personSelect" required>
+                    </select>
+                </td>
+
+                <td>
+                    <label>Anledning</label>
+                    <select id="formReason" required>
+                        <option value=""> </option>
+                        <option value="Arbetar hemma">Arbetar hemma</option>
+                        <option value="Arbetar hos kund">Arbetar hos kund</option>
+                        <option value="Deltidsledig">Deltidsledig</option>
+                        <option value="Föräldraledig">Föräldraledig</option>
+                        <option value="Gått för dagen">Gått för dagen</option>
+                        <option value="Kompledig">Kompledig</option>
+                        <option value="Kundbesök">Kundbesök</option>
+                        <option value="Möte">Möte</option>
+                        <option value="Semester">Semester</option>
+                        <option value="Sjuk">Sjuk</option>
+                        <option value="Tjänsteresa">Tjänsteresa</option>
+                        <option value="Tjänstledig">Tjänstledig</option>
+                        <option value="Vård av barn">Vård av barn</option>
+                        <option value="Övrigt">Övrigt</option>
+                    </select>
+                </td>
+                <td>
+                    <label>Meddelande</label>
+                    <input type="text" id="formMessage">
+                </td>
+                <td>
+                    <label>Från</label>
+                    <input required type="datetime-local" id="formStartTime">
+                </td>
+
+                <td>
+                    <label>Till</label>
+                    <input required type="datetime-local" id="formEndTime">
+                </td>
+                <td>
+                    <input class="button" id="submit-button" type="submit" value="+">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+
+    <div id='calendar'></div>
+
+    <div class="center-screen">
+        <div id='edit-box' style="display: none;">
+            <h1>
+                <div id="editBoxHeading ">EditBox</div>
+            </h1>
+            <div id="edit-box-body" style="text-align: left; ">
+
+                <p>Person: <select id="editPerson" class="personSelect" required></select></p>
+                <p> Anledning: <select id="editReason" required></select></p>
+                <p>Meddelande: <input id="editMessage" type="text" style="width:180"> </p>
+                <p> Från: <input required type="datetime-local" id="editStartTime"></p>
+                <p> Till: <input required type="datetime-local" id="editEndTime"></p>
+
+                <br>
+
+            </div>
+
+            <!-- <p id="tooltipEndTime "></p> -->
+            <input class="normal-button" type="save" id="save-edits-button" value="Spara">
+            <input class="normal-button" type="button" id="remove-button" value="Ta bort">
+            <input class="normal-button cancel-button" type="button" value="Avbryt">
+
+        </div>
+    </div>
+
+
+
+    <div class="center-screen">
+        <div id='tooltip' style="display: none;">
+            <h1>
+                <div id="tooltipHeading"></div>
+            </h1>
+
+            <hr>
+            <div id="tooltipTime"></div>
+
+            <br>
+            <div id="tooltipDescription"></div>
+            <br>
+
+            <input class="normal-button" id="edit-button" type="submit" value="Ändra">
+            <input class="normal-button cancel-button" type="button" value="Avbryt">
+        </div>
+    </div>
+</body>
+
+</html>

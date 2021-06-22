@@ -1,0 +1,49 @@
+[{
+    "resourceId": "b",
+    "title": "Möte",
+    "start": "2021-0614T144:0",
+    "end": "2021-06-14T16:48:00",
+    "color": "red",
+    "textColor": "#7BB0DF"
+}, {
+    "resourceId": "b",
+    "title": "Kompledig",
+    "start": "2021-06-07T14:48:00",
+    "end": "2021-06-10T16:48:00",
+    "color": "red",
+    "textColor": "#882D71"
+}, {
+    "resourceId": "c",
+    "title": "Semester",
+    "start": "2021-06-13T14:48:00",
+    "end": "2021-06-13T16:48:00",
+    "description": "Beskrivning1",
+    "display": "none",
+    "textColor": "#7BB0DF"
+}, {
+    "resourceId": "d",
+    "title": "Trött",
+    "start": "2021-06-23T14:48:00",
+    "end": "2021-06-23T16:48:00",
+    "description": "Beskrivning2",
+    "color": "red",
+    "textColor": "#882D71"
+
+}, {
+    "resourceId": "e",
+    "title": "Trött",
+    "start": "2021-06-25T14:48:00",
+    "end": "2021-06-25T1718:00",
+    "description": "Beskrivning3",
+    "color": "red",
+    "textColor": "#882D71"
+
+}, {
+    "resourceId": "g",
+    "title": "Gått för dagen",
+    "start": "2021-06-24T14:48:00",
+    "end": "2021-06-24T16:48:00",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio praesentium ipsum laborum accusamus iusto, numquam a similique assumenda perspiciatis exercitationem, impedit adipisci autem iure laboriosam quidem nostrum, quaerat enim qui.",
+    "color": "red",
+    "textColor": "#882D71"
+}]
